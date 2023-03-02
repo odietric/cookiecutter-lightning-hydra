@@ -187,13 +187,13 @@ if __name__ == "__main__":
 
         repo_owner = query_field(
             "What is the name of the owner (user/organisation) of the repository?",
-            default="ai4er-cdt",
+            default="James Bond",
             len_limit=30,
         )
 
         # Set user name and email for first commit
-        user_name = "ai4er-cookiecutter"
-        user_email = "cookiecutter@has-no-mail.org"
+        user_name = "james-bond"
+        user_email = "jamesbond@cookiecutter.org"
 
         # Derived variables
         repo_url = "git@github.com:" + repo_owner + "/" + repo_name + ".git"
@@ -210,7 +210,7 @@ if __name__ == "__main__":
             # Add remote at the repository URL
             subprocess.call(["git", "remote", "add", "origin", repo_url])
             subprocess.call(["git", "add", "-A"])
-            subprocess.call(["git", "commit", "-m", "Initalization"])
+            subprocess.call(["git", "commit", "-m", "Initalization 🚀"])
             subprocess.call(["git", "push", "-u", "origin", "master"])
 
             # Unset the user name and email form "cookiecutter" so user can use his own.

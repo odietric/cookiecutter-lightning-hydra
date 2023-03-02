@@ -90,3 +90,9 @@ io/
 
 # History files
 .history
+
+##### CUSTOM ######
+data
+data/
+# include source data
+!src/data/

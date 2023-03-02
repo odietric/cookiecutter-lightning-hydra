@@ -6,5 +6,5 @@ dependencies:
   - python={{cookiecutter.python_version}}
   - pip
   - pip:
-    - hydra-core
-    - -r dev-requirements.txt
+      - hydra-core
+      - -r dev-requirements.txt

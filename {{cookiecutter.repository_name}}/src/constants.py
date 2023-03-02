@@ -1,7 +1,9 @@
-# Place all your constants here
-import os
+from pathlib import Path
 
-# Note: constants should be UPPER_CASE
-constants_path = os.path.realpath(__file__)
-SRC_PATH = os.path.dirname(constants_path)
-PROJECT_PATH = os.path.dirname(SRC_PATH)
+# ------------------- PATH CONSTANTS -------------------
+constants_path = Path(__file__)
+SRC_PATH = constants_path.parent
+PROJECT_PATH = SRC_PATH.parent
+DATA_PATH = PROJECT_PATH / "data"
+RAW_PATH = DATA_PATH / "raw"
+PROCESSED_PATH = DATA_PATH / "processed"
