@@ -1,4 +1,5 @@
-# Project Generation Cookiecutter (🚧🚧🚧 WORK IN PROGRESS 🚧🚧🚧)
+# Project Generation Cookiecutter
+# (🚧🚧🚧 WORK IN PROGRESS 🚧🚧🚧)
 
 This cookiecutter provides a quick and easy way to create new projects for any data science.
 
